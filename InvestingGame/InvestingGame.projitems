@@ -9,5 +9,6 @@
     <Import_RootNamespace>InvestingGame</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Facility.cs" />
   </ItemGroup>
 </Project>
