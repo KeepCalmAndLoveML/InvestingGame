@@ -9,8 +9,13 @@
     <Import_RootNamespace>InvestingGame</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="$(MSBuildThisFileDirectory)Facility.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)GameManager.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Player.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Engine\GameDataManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Engine\GameLoader.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)GameLogic\Facility.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Engine\GameManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)GameLogic\Player.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)GameLogic\" />
   </ItemGroup>
 </Project>

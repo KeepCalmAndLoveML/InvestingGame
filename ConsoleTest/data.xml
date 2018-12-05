@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Facilities>
+  <Facility Name="Google" Description="This is a standard description." Type="1">
+    <Boundaries>
+      <KeyValuePair Key="0" Value="100" />
+    </Boundaries>
+  </Facility>
+  <Facility Name="Facebook" Description="This description was created using my command line helper.I hope it works!" Type="0">
+    <Boundaries>
+      <KeyValuePair Key="0" Value="1.5" />
+      <KeyValuePair Key="10" Value="2.5" />
+    </Boundaries>
+  </Facility>
+</Facilities>

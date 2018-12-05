@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace InvestingGame.Engine.GameLogic
+namespace InvestingGame.GameLogic
 { 
     public class Facility
     {
         //Info for displaying
-        public readonly string Name; 
+        public readonly string Name;
         public readonly string Description;
 
         //Key = Lower bound for multiplier
@@ -39,8 +39,32 @@ namespace InvestingGame.Engine.GameLogic
         //TODO: Add dice throwing return type
         public enum ReturnItemType
         {
-            Multiplier,
-            Additive,
+            Multiplier = 0,
+            Additive = 1,
+        }
+
+        //Todo: refactor this into bool TryParse(out return)
+        public static bool ReturnItemFromString(string s, out ReturnItemType returnItemType)
+        {
+            returnItemType = ReturnItemType.Additive;
+
+            int value;
+            if(int.TryParse(s, out value))
+            {
+                var returnItemTypesasInts = Enum.GetValues(typeof(ReturnItemType));
+                foreach(object obj in returnItemTypesasInts)
+                {
+                    if(value == (int)obj)
+                    {
+                        returnItemType = (ReturnItemType)obj;
+                        return true;
+                    }
+                }
+
+                return false;
+            }
+            else
+                return false;
         }
 
         public struct ReturnItem

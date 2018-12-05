@@ -1,0 +1,8 @@
+C:\Users\Филипп\Desktop\Проекты\C#\Xamarin\InvestingGame\ConsoleTest\bin\Debug\ConsoleTest.exe.config
+C:\Users\Филипп\Desktop\Проекты\C#\Xamarin\InvestingGame\ConsoleTest\bin\Debug\ConsoleTest.exe
+C:\Users\Филипп\Desktop\Проекты\C#\Xamarin\InvestingGame\ConsoleTest\bin\Debug\ConsoleTest.pdb
+C:\Users\Филипп\Desktop\Проекты\C#\Xamarin\InvestingGame\ConsoleTest\obj\Debug\ConsoleTest.csprojAssemblyReference.cache
+C:\Users\Филипп\Desktop\Проекты\C#\Xamarin\InvestingGame\ConsoleTest\obj\Debug\ConsoleTest.csproj.CoreCompileInputs.cache
+C:\Users\Филипп\Desktop\Проекты\C#\Xamarin\InvestingGame\ConsoleTest\obj\Debug\ConsoleTest.exe
+C:\Users\Филипп\Desktop\Проекты\C#\Xamarin\InvestingGame\ConsoleTest\obj\Debug\ConsoleTest.pdb
+C:\Users\Филипп\Desktop\Проекты\C#\Xamarin\InvestingGame\ConsoleTest\bin\Debug\data.xml

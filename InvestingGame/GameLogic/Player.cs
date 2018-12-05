@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace InvestingGame.Engine.GameLogic
+namespace InvestingGame.GameLogic
 {
     public class Player
     {
