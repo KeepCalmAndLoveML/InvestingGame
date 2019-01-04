@@ -1,0 +1,16 @@
+C:\Users\Филипп\Desktop\Проекты\C#\Xamarin\InvestingGame\MobilaApp\MobilaApp\bin\Debug\netstandard2.0\MobilaApp.deps.json
+C:\Users\Филипп\Desktop\Проекты\C#\Xamarin\InvestingGame\MobilaApp\MobilaApp\bin\Debug\netstandard2.0\MobilaApp.dll
+C:\Users\Филипп\Desktop\Проекты\C#\Xamarin\InvestingGame\MobilaApp\MobilaApp\bin\Debug\netstandard2.0\MobilaApp.pdb
+C:\Users\Филипп\Desktop\Проекты\C#\Xamarin\InvestingGame\MobilaApp\MobilaApp\obj\Debug\netstandard2.0\MobilaApp.csprojAssemblyReference.cache
+C:\Users\Филипп\Desktop\Проекты\C#\Xamarin\InvestingGame\MobilaApp\MobilaApp\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Филипп\Desktop\Проекты\C#\Xamarin\InvestingGame\MobilaApp\MobilaApp\obj\Debug\netstandard2.0\Views\AboutPage.xaml.g.cs
+C:\Users\Филипп\Desktop\Проекты\C#\Xamarin\InvestingGame\MobilaApp\MobilaApp\obj\Debug\netstandard2.0\Views\ItemDetailPage.xaml.g.cs
+C:\Users\Филипп\Desktop\Проекты\C#\Xamarin\InvestingGame\MobilaApp\MobilaApp\obj\Debug\netstandard2.0\Views\MainPage.xaml.g.cs
+C:\Users\Филипп\Desktop\Проекты\C#\Xamarin\InvestingGame\MobilaApp\MobilaApp\obj\Debug\netstandard2.0\Views\NewItemPage.xaml.g.cs
+C:\Users\Филипп\Desktop\Проекты\C#\Xamarin\InvestingGame\MobilaApp\MobilaApp\obj\Debug\netstandard2.0\MobilaApp.csproj.CoreCompileInputs.cache
+C:\Users\Филипп\Desktop\Проекты\C#\Xamarin\InvestingGame\MobilaApp\MobilaApp\obj\Debug\netstandard2.0\MobilaApp.AssemblyInfoInputs.cache
+C:\Users\Филипп\Desktop\Проекты\C#\Xamarin\InvestingGame\MobilaApp\MobilaApp\obj\Debug\netstandard2.0\MobilaApp.AssemblyInfo.cs
+C:\Users\Филипп\Desktop\Проекты\C#\Xamarin\InvestingGame\MobilaApp\MobilaApp\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Филипп\Desktop\Проекты\C#\Xamarin\InvestingGame\MobilaApp\MobilaApp\obj\Debug\netstandard2.0\MobilaApp.dll
+C:\Users\Филипп\Desktop\Проекты\C#\Xamarin\InvestingGame\MobilaApp\MobilaApp\obj\Debug\netstandard2.0\MobilaApp.pdb
+C:\Users\Филипп\Desktop\Проекты\C#\Xamarin\InvestingGame\MobilaApp\MobilaApp\obj\Debug\netstandard2.0\Views\InvestmentsPage.xaml.g.cs

@@ -1,0 +1,1 @@
+C:\Users\Филипп\Desktop\Проекты\C#\Xamarin\InvestingGame\MobilaApp\MobilaApp.UWP\MobilaApp.UWP.csproj;x86
