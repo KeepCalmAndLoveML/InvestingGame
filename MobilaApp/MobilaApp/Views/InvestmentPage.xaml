@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MobilaApp.Views.InvestmentPage">
+    <ContentPage.Content>
+		<StackLayout Padding="100,20">
+			<Grid ColumnSpacing="25" RowSpacing="3">
+				<Grid.Resources>
+					<Style TargetType="Label">
+						<Setter Property="FontSize" Value="Micro"/>
+						<Setter Property="HorizontalTextAlignment" Value="Center"/>
+						<Setter Property="VerticalTextAlignment" Value="Center"/>
+					</Style>
+					<Style TargetType="Frame">
+						<Setter Property="BackgroundColor" Value="DarkGray"/>
+						<Setter Property="Padding" Value="3"/>
+					</Style>
+				</Grid.Resources>
+				<Grid.RowDefinitions>
+					<RowDefinition Height="10"/>
+					<RowDefinition Height="30"/>
+					<RowDefinition Height="*"/>
+				</Grid.RowDefinitions>
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="2*"/>
+					<ColumnDefinition Width="7*"/>
+					<ColumnDefinition Width="7*"/>
+					<ColumnDefinition Width="7*"/>
+				</Grid.ColumnDefinitions>
+
+				<Label Text="Turn" TextColor="Black" Grid.Column="0" Grid.Row="1"/>
+				<Frame Grid.Column="1" Grid.Row="1">
+					<Frame.Content>
+						<Label Text="Initial sum"/>
+					</Frame.Content>
+				</Frame>
+				<Frame Grid.Column="2" Grid.Row="1">
+					<Frame.Content>
+						<Label Text="Facility" TextColor="Black"/>
+					</Frame.Content>
+				</Frame>
+				<Frame Grid.Column="3" Grid.Row="1">
+					<Frame.Content>
+						<Label Text="Result" Grid.Row="0" Grid.Column="2"/>
+					</Frame.Content>
+				</Frame>
+			</Grid>
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>

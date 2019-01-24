@@ -3,6 +3,8 @@
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
+using InvestingGame.Engine;
+
 namespace MobilaApp.Views
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
