@@ -17,7 +17,7 @@ namespace InvestingGame.GameLogic
         public readonly ReturnItemType FacilityReturnType;
         
         //This is always >= 0       
-        public List<Player.Investment> TotalInvestments { get; private set; }
+        public List<Player.Investment> AllInvestments { get; private set; }
 
         //Created for optimisation purposes, null if GetReturnItem() was not executed on this turn, else ReturnItem
         //Entirely Managed in GameManager class
@@ -28,12 +28,16 @@ namespace InvestingGame.GameLogic
             this.Name = name;
             this.Description = description;
             this.FacilityReturnType = type;
+			this.AllInvestments = new List<Player.Investment>();
 
-            if(boundaries.ContainsKey(0d))
-                this.Boundaries = boundaries;          
-            else
-                throw new ArgumentException("Facility boundaries should contain 0 key");
-            
+			if(boundaries.ContainsKey(0d))
+				this.Boundaries = boundaries;
+			else
+			{
+				Boundaries = new Dictionary<double, double>();
+				Boundaries.Add(0, 0);
+				//throw new ArgumentException("Facility boundaries should contain 0 key");
+			}
         }
 
         //TODO: Add dice throwing return type

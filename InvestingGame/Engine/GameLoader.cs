@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Text;
 
 using System.Xml.Linq;
@@ -8,7 +9,7 @@ using InvestingGame.GameLogic;
 
 namespace InvestingGame.Engine
 {
-    public class GameLoader
+    internal class GameLoader
     {
         private XDocument BaseDocument;
         
@@ -16,6 +17,11 @@ namespace InvestingGame.Engine
         {
             BaseDocument = XDocument.Load(path);
         }
+
+		public GameLoader(Stream stream)
+		{
+			BaseDocument = XDocument.Load(stream);
+		}
         
         //This works!
         public List<Facility> GetFacilities()
@@ -29,21 +35,25 @@ namespace InvestingGame.Engine
                 string description = facility.Attribute("Description").Value;
                 string type = facility.Attribute("Type").Value;
                 Facility.ReturnItemType returnItemType;
-                if (!Facility.ReturnItemFromString(type, out returnItemType)) //Invalid type
-                    continue;
+				if(!Facility.ReturnItemFromString(type, out returnItemType)) //Invalid type
+					continue;
+					//throw new InvalidOperationException("The type string does not represent any Return Item Type");
+					//returnItemType = Facility.ReturnItemType.Additive;
 
                 var boundariesElements = facility.Element("Boundaries").Elements(); //Key Value pairs
                 Dictionary<double, double> boundaries = new Dictionary<double, double>();
 
                 double key, value;
+				System.Globalization.NumberStyles numberStyles = System.Globalization.NumberStyles.Any;
+				System.Globalization.CultureInfo cultureInfo = System.Globalization.CultureInfo.InvariantCulture;
                 foreach(var element in boundariesElements)
                 {
                     string sKey = element.Attribute("Key").Value;
                     string sValue = element.Attribute("Value").Value;
 
-                    if (double.TryParse(sKey, out key))
+                    if (double.TryParse(sKey, numberStyles, cultureInfo, out key))
                     {
-                        if (double.TryParse(sValue, out value))
+                        if (double.TryParse(sValue, numberStyles, cultureInfo, out value))
                         {
                             boundaries.Add(key, value);
                         }
