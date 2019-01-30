@@ -119,7 +119,7 @@
 				</Grid.ColumnDefinitions>
 				
 				<Label Text="The following players invested in this facility:" FontSize="Small" Grid.Row="0" Grid.Column="1" HorizontalOptions="Center"/>
-				<ListView ItemsSource="{Binding Investments}" Grid.Row="1" Grid.Column="1" HorizontalOptions="Center">
+				<ListView x:Name="InvestmentItems" ItemsSource="{Binding Investments}" Grid.Row="1" Grid.Column="1" HorizontalOptions="Center">
 					<ListView.ItemTemplate>
 						<DataTemplate>
 							<ViewCell>

@@ -28,7 +28,17 @@ namespace MobilaApp.Views
 
 			model = new FacilityDetailsViewModel(facility);
 
+			InvestmentItems.ItemSelected += InvestmentSelected;
 			this.BindingContext = model;
+		}
+
+		private async void InvestmentSelected(object sender, SelectedItemChangedEventArgs e)
+		{
+			if(e.SelectedItem == null)
+				return;
+
+			var investment = (BriefInvestment)e.SelectedItem;
+			await Navigation.PushAsync(new InvestmentPage(new InvestmentViewModel(new Investment(investment.BaseInvestment))));
 		}
 	}
 }
